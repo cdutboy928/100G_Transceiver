@@ -29,9 +29,8 @@ try:
     # 输入用户名和密码
     username_input = browser.find_element(By.CSS_SELECTOR, 'nz-input-group.ng-tns-c177-0 > input:nth-child(2)')  # 替换为实际的用户名输入框的选择器
     password_input = browser.find_element(By.CSS_SELECTOR, 'nz-input-group.ng-tns-c177-1 > input:nth-child(2)')  # 替换为实际的密码输入框的选择器
-
-    username_input.send_keys('wladm')  # 替换为实际的用户名
-    password_input.send_keys('Wladm@!@#')  # 替换为实际的密码
+    username_input.send_keys=os.getenv('')  # 替换为实际的用户名
+    password_input.send_keys=os.getenv(('')  # 替换为实际的密码
 
     # 提交表单
     password_input.send_keys(Keys.RETURN)  # 模拟按下回车键提交表单
