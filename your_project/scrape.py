@@ -36,7 +36,7 @@ try:
     password_input.send_keys(Keys.RETURN)  # 模拟按下回车键提交表单
 
     # 登录成功后，导航到指定的 URL
-    browser.get('http://118.187.15.2:8089/#/sdn/business/business-info/Tunnel-Site-1688835019528867840%23Ne-1688854328804249600%23LINECARD-1-1%23PORT-1-1-C1-Site-1688835019101048832%23Ne-1688854328921690112%23LINECARD-1-1%23PORT-1-1-C1?tabKey=0')  # 导航到目标网址
+    browser.get('')  # 导航到目标网址
 
     # 等待页面加载完成
     WebDriverWait(browser, 30).until(EC.presence_of_element_located((By.CSS_SELECTOR, '#cdk-overlay-4 > nz-modal-container > div > div > div.ant-modal-body.ng-tns-c213-55 > div > div.ant-col.ant-col-13 > div > pm-list-panel > nz-tabset > div > div.ant-tabs-tabpane.ng-star-inserted.ant-tabs-tabpane-active > div > nz-table > nz-spin > div > div > nz-table-inner-default > div > table > tbody > tr:nth-child(4) > td:nth-child(2)')))  # 增加等待时间
